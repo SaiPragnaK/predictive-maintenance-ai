@@ -1,0 +1,110 @@
+/* Universal selector
+*{
+    font-family:'Courier New', Courier, monospace;
+    background-color: blue;
+} */
+ /* h3{
+    color:purple;
+ } */
+ h1,h3{
+    color: #b92b27;
+ }
+ /* Id selector */
+ #login{
+    background-color: white;
+ }
+ #signup{
+    background-color: red;
+    color:white;
+ }
+ /* Class selctor */
+ .upvote{
+    background-color: green;
+    color:aliceblue;
+ }
+/* Descendant selector */
+/* p a{
+   color:purple;
+   background-color: yellow;
+} */
+ .post a{
+   background-color: yellow;
+   color:purple;
+
+ }
+ nav ul li{
+   color:pink;
+ }
+ /* Adjacent Sibling Combinator */
+ p+h3{
+   text-decoration:underline;
+ }
+ .upvote+button{
+   background-color:cornflowerblue;
+   color:darkblue;
+ }
+ /* Child Combinator */
+ div>input{
+   background-color: darksalmon;
+ }
+ /* attribute selector */
+ input[type="text"]{
+   color:red;
+ }
+ input[type="password"]
+ {
+   color:green;
+ }
+ input[type]{
+   background-color: bisque;
+ }
+ #myid p{
+   color: green;
+
+ }
+ /* Or
+div[id="myid"] p{
+   color:green;
+} */
+ /* pseudo class  specificity*/
+ button:hover{
+   background-color: black;
+   color:white
+ }
+ h3:hover{
+   text-decoration: overline;
+ }
+ button:active{
+   background-color: hotpink;
+   color:black;
+ }
+ p:active{
+   font-weight: bold;
+   color:green;
+ }
+ input[type="radio"]:checked + label{
+   color:red;
+   font-weight: bold;
+
+ }
+ .post:nth-of-type(2n){
+   background-color: blanchedalmond;
+ }
+ /* pseudo elements */
+ h1::first-letter{
+   color:pink;
+ }
+ p::first-line{
+   color:purple;
+ }
+ p::selection {
+   background-color: rgb(199,192,58);
+
+ }
+ /* understanding the cascading property */
+ h3{
+   background-color:yellow;
+ }
+ h3{
+   background-color:blue;
+ }
